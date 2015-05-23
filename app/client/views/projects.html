@@ -1,0 +1,26 @@
+<template name="projects">
+
+
+  <div class="container">
+     <div class='name'>Dan Corman</div>
+    <div class='tabs'>
+      {{#dynamicTabs tabs=tabs activeTab='projects'}}
+      {{#if activeTab}}
+        {{trackActiveTab activeTab}}
+        {{/if}}
+        {{/dynamicTabs}}
+      </div>
+    <div class="jumbotron">
+      <button class="btn btn-default" type="button">Learn More</button>
+
+      
+
+
+      {{#if projectsButton}}
+      <h3>{{projectsButton}}</h3>
+      {{/if}}
+    </div>
+  </div>
+</template>
+
+

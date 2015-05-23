@@ -1,0 +1,27 @@
+<template name="connect">
+
+
+  <div class="container">
+    <div class='name'>Dan Corman</div>
+    <div class='tabs'>
+      {{#dynamicTabs tabs=tabs activeTab='connect'}}
+      {{#if activeTab}}
+        {{trackActiveTab}}
+        {{/if}}
+        {{/dynamicTabs}}
+      </div>
+    <div class="jumbotron">
+      <h1>Reach out to me!</h1>
+      <button class="btn btn-default" type="button">Learn More</button>
+
+
+
+
+      {{#if connectButton}}
+      <h3>{{connectButton}}</h3>
+      {{/if}}
+    </div>
+  </div>
+</template>
+
+
