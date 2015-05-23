@@ -13,17 +13,10 @@ if (Meteor.isClient) {
     // This function is called when the new task form is submitted
 
     var text = event.target.text.value;
-
-    Tasks.insert({
-      text: text,
-      createdAt: new Date() // current time
-    });
-
     // Clear form
     event.target.text.value = "";
 
     // Prevent default form submit
-    return false;
 
      Tasks.insert({
       text: text,
@@ -31,6 +24,7 @@ if (Meteor.isClient) {
       owner: Meteor.userId(),           // _id of logged in user
       username: Meteor.user().username  // username of logged in user
     });
+    return false;
   },
    "change .hide-completed input": function (event) {
   Session.set("hideCompleted", event.target.checked);
