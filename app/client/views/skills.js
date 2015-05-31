@@ -14,7 +14,7 @@ Template.skills.helpers({
 
 Template.skills.events({
   'click button': function(event, template) {
-    Session.set('skillsButton', 'Ok but seriously, give me a job....');
+    Session.set('skillsButton','Wow, you actually wanna hear my story. I am so unprepared... um. Hmmmmm.');
   }
 });
 
