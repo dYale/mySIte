@@ -14,7 +14,7 @@ Template.projects.helpers({
 
 Template.projects.events({
   'click button': function(event, template) {
-    Session.set('projectsButton', 'Honestly, I have too many skills to list here. But I am impressive enough that you want to learn more!!!!');
+    Session.set('projectsButton', 'Wow, you actually wanna hear my story. I am so unprepared... um. Hmmmmm.');
   }
 });
 
