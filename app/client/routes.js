@@ -7,6 +7,7 @@ Router.route('/', {name: 'me', controller: 'MainController'});
 Router.route('/skills', {name: 'skills', controller: 'SkillsController'})
 Router.route('/projects', {name: 'projects', controller: 'ProjectsController'})
 Router.route('/connect', {name: 'connect', controller: 'ConnectController'})
+Router.route('/signin', {name: 'signin', controller: 'SigninController'})
 
 
 

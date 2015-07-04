@@ -21,7 +21,10 @@ if (Meteor.isClient) {
       	Router.go('/projects') } },
       { name: 'Connect', slug: 'connect', onRender: function(template) {
       	Router.go('/connect')
-      }}
+      }},
+      { name: 'Blog', slug: 'blog', onRender: function(template) {
+      	Router.go('/blog')
+      }},
     ];
 	})
 

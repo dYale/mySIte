@@ -2,3 +2,6 @@ standard-app-packages
 iron:router
 twbs:bootstrap
 templates:tabs
+ryw:blog
+accounts-ui
+accounts-password
