@@ -6,7 +6,14 @@ if (Meteor.isClient) {
 		template: 'dynamicTabs',
 		onChange: function (slug) {
 			console.log('[tabs] Tab has changed:', slug);
-		}
+		}}),
+
+
+	Blog.config({
+    	rss: {
+      title: 'My blog title',
+      description: 'My blog description'
+    }
 	});
 
 
