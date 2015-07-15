@@ -13,7 +13,9 @@ if (Meteor.isClient) {
     	rss: {
       title: 'My blog title',
       description: 'My blog description'
-    }
+    },
+    syntaxHighlighting: true,
+  	syntaxHighlightingTheme: 'github'
 	});
 
 
@@ -21,11 +23,14 @@ if (Meteor.isClient) {
 	Template.registerHelper('tabs', function(){
 		return [
 		{ name: 'Me', slug: 'me', onRender: function(template) {
-      	Router.go('/') } },
+      	Router.go('/')
+      }},
       { name: 'Skills', slug: 'skills', onRender: function(template) {
-      	Router.go('/skills') } },
+      	Router.go('/skills') 
+      }},
       { name: 'Projects', slug: 'projects', onRender: function(template) {
-      	Router.go('/projects') } },
+      	Router.go('/projects') 
+      }},
       { name: 'Connect', slug: 'connect', onRender: function(template) {
       	Router.go('/connect')
       }},
@@ -44,8 +49,6 @@ if (Meteor.isClient) {
 //     var currentRoute = Router.current();
 //     return currentRoute;
 //   });
-
-
 
 }
 

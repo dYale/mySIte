@@ -14,7 +14,7 @@ Template.projects.helpers({
 
 Template.projects.events({
   'click button': function(event, template) {
-    Session.set('projectsButton', 'Wow, you actually wanna hear my story. I am so unprepared... um. Hmmmmm.');
+    Session.set('projectsButton', 'Placeholder');
   }
 });
 
