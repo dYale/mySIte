@@ -1,3 +1,4 @@
+
 Router.configure({
   layoutTemplate: 'layout',
   loadingTemplate: 'loading'
@@ -31,8 +32,6 @@ SkillsController = RouteController.extend({
 		)
 	}
 })
-
-
 
 ProjectsController = RouteController.extend({
 	action: function(){

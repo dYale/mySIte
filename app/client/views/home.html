@@ -8,20 +8,9 @@
 
 
       {{#if homeButton}}
-      <body>{{> blogIndex}}</body>
+      <body>{{> blogLatest}}</body>
       {{/if}}
     </div>
-    <h1>Welcome to my Blog</h1>
-  <ul>
-    {{#each posts}}
-      <li>
-        <h2>{{title}}</h2>
-        <p>Published on {{publishedAt}}</p>
-        <p>Excerpt: {{excerpt}}</p>
-      </li>
-    {{/each}}
-  </ul>
-
   </div>
 </template>
 

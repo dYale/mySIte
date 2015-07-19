@@ -1,5 +1,6 @@
 //tabs which will react to routing
 
+
 if (Meteor.isClient) {
 
 	ReactiveTabs.createInterface({
@@ -15,7 +16,9 @@ if (Meteor.isClient) {
       description: 'My blog description'
     },
     syntaxHighlighting: true,
-  	syntaxHighlightingTheme: 'github'
+  	syntaxHighlightingTheme: 'github',
+    blogIndexTemplate: 'myBlogIndexTemplate',
+    blogShowTemplate: 'myShowBlogTemplate'
 	});
 
 
@@ -36,7 +39,7 @@ if (Meteor.isClient) {
       }},
       { name: 'Blog', slug: 'blog', onRender: function(template) {
       	Router.go('/blog')
-      }},
+      }}
     ];
 	})
 
