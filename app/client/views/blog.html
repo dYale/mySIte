@@ -1,0 +1,12 @@
+<template name="myBlogIndexTemplate">
+  <h1>Welcome to my Blog</h1>
+  <ul>
+    {{#each posts}}
+      <li >
+        <h2>{{title}}</h2>
+        <p>Published on {{publishedAt}}</p>
+        <p class='boddd'>Excerpt: {{excerpt}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</template>
